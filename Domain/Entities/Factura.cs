@@ -13,5 +13,5 @@ public partial class Factura
 
     public int? FacturaActual { get; set; }
 
-    public string? NroResolucion { get; set; }
+    public string NroResolucion { get; set; }
 }

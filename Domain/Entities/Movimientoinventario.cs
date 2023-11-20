@@ -7,9 +7,9 @@ public partial class Movimientoinventario
 {
     public string Id { get; set; } = null!;
 
-    public string? IdResponsable { get; set; }
+    public string IdResponsable { get; set; }
 
-    public string? IdReceptor { get; set; }
+    public string IdReceptor { get; set; }
 
     public DateOnly? FechaMovimiento { get; set; }
 
@@ -21,11 +21,11 @@ public partial class Movimientoinventario
 
     public virtual ICollection<Detallemovinventario> Detallemovinventarios { get; set; } = new List<Detallemovinventario>();
 
-    public virtual Formapago? IdFormaPagoNavigation { get; set; }
+    public virtual Formapago IdFormaPagoNavigation { get; set; }
 
-    public virtual Persona? IdReceptorNavigation { get; set; }
+    public virtual Persona IdReceptorNavigation { get; set; }
 
-    public virtual Persona? IdResponsableNavigation { get; set; }
+    public virtual Persona IdResponsableNavigation { get; set; }
 
-    public virtual Tipomovinventario? IdtipoMovInvNavigation { get; set; }
+    public virtual Tipomovinventario IdtipoMovInvNavigation { get; set; }
 }

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Persistence.Data.Configuration
 {
-    public class Detallemovinventario : IEntityTypeConfiguration<Detallemovinventario>
+    public class DetallemovinventarioConfiguration : IEntityTypeConfiguration<Detallemovinventario>
     {
 
         public void Configure(EntityTypeBuilder<Detallemovinventario> builder)

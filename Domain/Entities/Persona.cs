@@ -8,7 +8,7 @@ public partial class Persona
 {
     public string Id { get; set; } = null!;
 
-    public string? Nombre { get; set; }
+    public string Nombre { get; set; }
 
     public DateOnly? FechaRegistro { get; set; }
 
@@ -20,11 +20,11 @@ public partial class Persona
 
     public virtual ICollection<Contactopersona> Contactopersonas { get; set; } = new List<Contactopersona>();
 
-    public virtual Tipodocumento? IdDocumentoNavigation { get; set; }
+    public virtual Tipodocumento IdDocumentoNavigation { get; set; }
 
-    public virtual Rolpersona? IdRolPersonaNavigation { get; set; }
+    public virtual Rolpersona IdRolPersonaNavigation { get; set; }
 
-    public virtual Tipopersona? IdTipoPersonaNavigation { get; set; }
+    public virtual Tipopersona IdTipoPersonaNavigation { get; set; }
 
     public virtual ICollection<Movimientoinventario> MovimientoinventarioIdReceptorNavigations { get; set; } = new List<Movimientoinventario>();
 

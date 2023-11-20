@@ -7,7 +7,7 @@ public partial class Inventario
 {
     public string Id { get; set; } = null!;
 
-    public string? Nombre { get; set; }
+    public string Nombre { get; set; }
 
     public double? Precio { get; set; }
 
@@ -17,13 +17,13 @@ public partial class Inventario
 
     public short? StockMax { get; set; }
 
-    public string? CodProducto { get; set; }
+    public string CodProducto { get; set; }
 
     public int? Idpresentacion { get; set; }
 
-    public virtual Producto? CodProductoNavigation { get; set; }
+    public virtual Producto CodProductoNavigation { get; set; }
 
     public virtual ICollection<Detallemovinventario> Detallemovinventarios { get; set; } = new List<Detallemovinventario>();
 
-    public virtual Presentacion? IdpresentacionNavigation { get; set; }
+    public virtual Presentacion IdpresentacionNavigation { get; set; }
 }
